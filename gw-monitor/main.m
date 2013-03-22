@@ -28,7 +28,7 @@ int main(int argc, const char * argv[])
         NSFileManager *fileManager = [NSFileManager defaultManager];
         if (![fileManager isWritableFileAtPath:filepath]) {
             printf("Cannot access file: 『%s』", [fileURL.absoluteString UTF8String]);
-            return 0;
+            return -1;
         }
 
         ApplicationDelegate *delegate = [[ApplicationDelegate alloc] initWithFileURL:fileURL];
