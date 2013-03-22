@@ -1,0 +1,3 @@
+[submodule "vendor/Reachability"]
+	path = vendor/Reachability
+	url = git://github.com/tonymillion/Reachability.git
