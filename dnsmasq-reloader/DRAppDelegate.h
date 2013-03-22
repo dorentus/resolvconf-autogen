@@ -1,5 +1,5 @@
 //
-//  ApplicationDelegate.h
+//  DRAppDelegate.h
 //  gw-monitor
 //
 //  Created by Zhang Yi on 13-3-22.
@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ApplicationDelegate : NSObject<NSApplicationDelegate>
-
-- (id)initWithFileURL:(NSURL *)url;
+@interface DRAppDelegate : NSObject<NSApplicationDelegate>
 
 @end
