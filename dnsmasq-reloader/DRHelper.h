@@ -3,7 +3,7 @@
 //  gw-monitor
 //
 //  Created by Zhang Yi on 13-3-23.
-//  Copyright (c) 2013年 Zhang Yi. All rights reserved.
+//  Copyright (c) 2013年 Zhang Yi.
 //
 
 #ifndef gw_monitor_DRHelper_h
