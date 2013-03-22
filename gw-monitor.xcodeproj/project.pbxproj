@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8C1BB09016FC6FCD007A046D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1BB08F16FC6FCD007A046D /* CoreFoundation.framework */; };
-		8C1BB09316FC6FCD007A046D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C1BB09216FC6FCD007A046D /* main.c */; };
-		8C1BB09516FC6FCD007A046D /* gw_monitor.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C1BB09416FC6FCD007A046D /* gw_monitor.1 */; };
+		8C1BB09316FC6FCD007A046D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1BB09216FC6FCD007A046D /* main.m */; };
+		8C1BB09C16FC7026007A046D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1BB09B16FC7026007A046D /* SystemConfiguration.framework */; };
+		8C1BB0CA16FC7068007A046D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1BB0C216FC7068007A046D /* Reachability.m */; };
+		8C1BB0D216FC70CF007A046D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1BB0D116FC70CF007A046D /* AppKit.framework */; };
+		8C1BB0D416FC70D7007A046D /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1BB0D316FC70D7007A046D /* ApplicationServices.framework */; };
+		8C1BB0D716FC717E007A046D /* ApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1BB0D616FC717E007A046D /* ApplicationDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +23,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				8C1BB09516FC6FCD007A046D /* gw_monitor.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -28,8 +31,14 @@
 /* Begin PBXFileReference section */
 		8C1BB08C16FC6FCD007A046D /* gw-monitor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "gw-monitor"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C1BB08F16FC6FCD007A046D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		8C1BB09216FC6FCD007A046D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		8C1BB09416FC6FCD007A046D /* gw_monitor.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = gw_monitor.1; sourceTree = "<group>"; };
+		8C1BB09216FC6FCD007A046D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C1BB09B16FC7026007A046D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8C1BB0C116FC7068007A046D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		8C1BB0C216FC7068007A046D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		8C1BB0D116FC70CF007A046D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8C1BB0D316FC70D7007A046D /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		8C1BB0D516FC717E007A046D /* ApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationDelegate.h; sourceTree = "<group>"; };
+		8C1BB0D616FC717E007A046D /* ApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1BB0D416FC70D7007A046D /* ApplicationServices.framework in Frameworks */,
+				8C1BB0D216FC70CF007A046D /* AppKit.framework in Frameworks */,
+				8C1BB09C16FC7026007A046D /* SystemConfiguration.framework in Frameworks */,
 				8C1BB09016FC6FCD007A046D /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +59,7 @@
 		8C1BB08316FC6FCD007A046D = {
 			isa = PBXGroup;
 			children = (
+				8C1BB09D16FC705F007A046D /* vendor */,
 				8C1BB09116FC6FCD007A046D /* gw-monitor */,
 				8C1BB08E16FC6FCD007A046D /* Frameworks */,
 				8C1BB08D16FC6FCD007A046D /* Products */,
@@ -64,6 +77,9 @@
 		8C1BB08E16FC6FCD007A046D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C1BB0D316FC70D7007A046D /* ApplicationServices.framework */,
+				8C1BB0D116FC70CF007A046D /* AppKit.framework */,
+				8C1BB09B16FC7026007A046D /* SystemConfiguration.framework */,
 				8C1BB08F16FC6FCD007A046D /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
@@ -72,10 +88,29 @@
 		8C1BB09116FC6FCD007A046D /* gw-monitor */ = {
 			isa = PBXGroup;
 			children = (
-				8C1BB09216FC6FCD007A046D /* main.c */,
-				8C1BB09416FC6FCD007A046D /* gw_monitor.1 */,
+				8C1BB0D516FC717E007A046D /* ApplicationDelegate.h */,
+				8C1BB0D616FC717E007A046D /* ApplicationDelegate.m */,
+				8C1BB09216FC6FCD007A046D /* main.m */,
 			);
 			path = "gw-monitor";
+			sourceTree = "<group>";
+		};
+		8C1BB09D16FC705F007A046D /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				8C1BB09E16FC7068007A046D /* Reachability */,
+			);
+			name = vendor;
+			sourceTree = "<group>";
+		};
+		8C1BB09E16FC7068007A046D /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				8C1BB0C116FC7068007A046D /* Reachability.h */,
+				8C1BB0C216FC7068007A046D /* Reachability.m */,
+			);
+			name = Reachability;
+			path = vendor/Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C1BB09316FC6FCD007A046D /* main.c in Sources */,
+				8C1BB09316FC6FCD007A046D /* main.m in Sources */,
+				8C1BB0CA16FC7068007A046D /* Reachability.m in Sources */,
+				8C1BB0D716FC717E007A046D /* ApplicationDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
