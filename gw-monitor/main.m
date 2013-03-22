@@ -7,9 +7,12 @@
 //
 
 #import <CoreFoundation/CoreFoundation.h>
-#import <AppKit/AppKit.h>
 #import "ApplicationDelegate.h"
 #include <libgen.h>
+
+#ifndef DEBUG
+#define NSLog(...)
+#endif
 
 int main(int argc, const char * argv[])
 {
