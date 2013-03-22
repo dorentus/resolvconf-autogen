@@ -1,4 +1,4 @@
-正确使用方式
+正确<del>打开</del>使用方式
 ============
 
 1. 构建 `gw-monitor`，安装到 `/usr/local/bin/gw-monitor`
