@@ -39,6 +39,7 @@
 		8C1BB0D316FC70D7007A046D /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		8C1BB0D516FC717E007A046D /* ApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationDelegate.h; sourceTree = "<group>"; };
 		8C1BB0D616FC717E007A046D /* ApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationDelegate.m; sourceTree = "<group>"; };
+		8C1BB0D816FC7B5D007A046D /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 				8C1BB0D516FC717E007A046D /* ApplicationDelegate.h */,
 				8C1BB0D616FC717E007A046D /* ApplicationDelegate.m */,
 				8C1BB09216FC6FCD007A046D /* main.m */,
+				8C1BB0D816FC7B5D007A046D /* prefix.pch */,
 			);
 			path = "gw-monitor";
 			sourceTree = "<group>";
@@ -235,6 +237,8 @@
 		8C1BB09916FC6FCD007A046D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gw-monitor/prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -242,6 +246,8 @@
 		8C1BB09A16FC6FCD007A046D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gw-monitor/prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
