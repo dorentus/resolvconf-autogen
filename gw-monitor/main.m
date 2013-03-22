@@ -7,7 +7,7 @@
 //
 
 #import <CoreFoundation/CoreFoundation.h>
-#import "ApplicationDelegate.h"
+#import "GWMonitorAppDelegate.h"
 #include <libgen.h>
 
 int main(int argc, const char * argv[])
@@ -27,7 +27,7 @@ int main(int argc, const char * argv[])
             return -1;
         }
 
-        ApplicationDelegate *delegate = [[ApplicationDelegate alloc] initWithFileURL:fileURL];
+        GWMonitorAppDelegate *delegate = [[GWMonitorAppDelegate alloc] initWithFileURL:fileURL];
         NSApplication *app = [NSApplication sharedApplication];
         [app setDelegate:delegate];
         [app run];
