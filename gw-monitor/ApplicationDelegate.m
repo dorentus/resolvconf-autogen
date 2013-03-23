@@ -1,21 +1,21 @@
 //
-//  GWMonitorAppDelegate.m
+//  ApplicationDelegate.m
 //  gw-monitor
 //
 //  Created by Zhang Yi on 13-3-22.
 //  Copyright (c) 2013年 Zhang Yi.
 //
 
-#import "GWMonitorAppDelegate.h"
+#import "ApplicationDelegate.h"
 #import "Reachability.h"
 
-@interface GWMonitorAppDelegate ()
+@interface ApplicationDelegate ()
 
 @property (nonatomic, strong) NSURL *fileURL;
 
 @end
 
-@implementation GWMonitorAppDelegate
+@implementation ApplicationDelegate
 
 - (id)initWithFileURL:(NSURL *)url
 {
@@ -44,8 +44,6 @@
             BOOL ok = [output writeToURL:_fileURL atomically:YES encoding:NSASCIIStringEncoding error:&error];
             if (!ok) {
                 NSLog(@"Failed write to file %@, error: %@", _fileURL.absoluteString, [error localizedDescription]);
-            } else {
-                [[NSDistributedNotificationCenter defaultCenter] postNotificationName:GW_UPDATE_NOTIFICATION_NAME object:nil userInfo:@{@"gw":routerString}];
             }
         }
         NSLog(@"router: %@", routerString);

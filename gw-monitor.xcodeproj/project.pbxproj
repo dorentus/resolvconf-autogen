@@ -12,24 +12,12 @@
 		8C1BB09C16FC7026007A046D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1BB09B16FC7026007A046D /* SystemConfiguration.framework */; };
 		8C1BB0CA16FC7068007A046D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1BB0C216FC7068007A046D /* Reachability.m */; };
 		8C1BB0D216FC70CF007A046D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1BB0D116FC70CF007A046D /* AppKit.framework */; };
-		8C1BB0D716FC717E007A046D /* GWMonitorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1BB0D616FC717E007A046D /* GWMonitorAppDelegate.m */; };
-		8C1BB0DE16FCB24D007A046D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1BB08F16FC6FCD007A046D /* CoreFoundation.framework */; };
-		8C1BB0E116FCB24D007A046D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1BB0E016FCB24D007A046D /* main.m */; };
-		8C1BB0E716FCB25F007A046D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1BB0D116FC70CF007A046D /* AppKit.framework */; };
-		8C1BB0EC16FCB38A007A046D /* DRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1BB0EB16FCB38A007A046D /* DRAppDelegate.m */; };
+		8C1BB0D416FC70D7007A046D /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1BB0D316FC70D7007A046D /* ApplicationServices.framework */; };
+		8C1BB0D716FC717E007A046D /* ApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1BB0D616FC717E007A046D /* ApplicationDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		8C1BB08A16FC6FCD007A046D /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		8C1BB0DB16FCB24D007A046D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -48,14 +36,10 @@
 		8C1BB0C116FC7068007A046D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		8C1BB0C216FC7068007A046D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		8C1BB0D116FC70CF007A046D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		8C1BB0D516FC717E007A046D /* GWMonitorAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWMonitorAppDelegate.h; sourceTree = "<group>"; };
-		8C1BB0D616FC717E007A046D /* GWMonitorAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWMonitorAppDelegate.m; sourceTree = "<group>"; };
-		8C1BB0DD16FCB24D007A046D /* dnsmasq-reloader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "dnsmasq-reloader"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C1BB0E016FCB24D007A046D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8C1BB0E916FCB2A6007A046D /* prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = prefix.pch; path = common/prefix.pch; sourceTree = "<group>"; };
-		8C1BB0EA16FCB38A007A046D /* DRAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRAppDelegate.h; sourceTree = "<group>"; };
-		8C1BB0EB16FCB38A007A046D /* DRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRAppDelegate.m; sourceTree = "<group>"; };
-		8C1BB0ED16FCB827007A046D /* DRHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRHelper.h; sourceTree = "<group>"; };
+		8C1BB0D316FC70D7007A046D /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		8C1BB0D516FC717E007A046D /* ApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationDelegate.h; sourceTree = "<group>"; };
+		8C1BB0D616FC717E007A046D /* ApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationDelegate.m; sourceTree = "<group>"; };
+		8C1BB0D816FC7B5D007A046D /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,18 +47,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1BB0D416FC70D7007A046D /* ApplicationServices.framework in Frameworks */,
 				8C1BB0D216FC70CF007A046D /* AppKit.framework in Frameworks */,
 				8C1BB09C16FC7026007A046D /* SystemConfiguration.framework in Frameworks */,
 				8C1BB09016FC6FCD007A046D /* CoreFoundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C1BB0DA16FCB24D007A046D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C1BB0E716FCB25F007A046D /* AppKit.framework in Frameworks */,
-				8C1BB0DE16FCB24D007A046D /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,10 +60,8 @@
 		8C1BB08316FC6FCD007A046D = {
 			isa = PBXGroup;
 			children = (
-				8C1BB0E816FCB285007A046D /* common */,
 				8C1BB09D16FC705F007A046D /* vendor */,
 				8C1BB09116FC6FCD007A046D /* gw-monitor */,
-				8C1BB0DF16FCB24D007A046D /* dnsmasq-reloader */,
 				8C1BB08E16FC6FCD007A046D /* Frameworks */,
 				8C1BB08D16FC6FCD007A046D /* Products */,
 			);
@@ -97,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				8C1BB08C16FC6FCD007A046D /* gw-monitor */,
-				8C1BB0DD16FCB24D007A046D /* dnsmasq-reloader */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +78,7 @@
 		8C1BB08E16FC6FCD007A046D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C1BB0D316FC70D7007A046D /* ApplicationServices.framework */,
 				8C1BB0D116FC70CF007A046D /* AppKit.framework */,
 				8C1BB09B16FC7026007A046D /* SystemConfiguration.framework */,
 				8C1BB08F16FC6FCD007A046D /* CoreFoundation.framework */,
@@ -115,9 +89,10 @@
 		8C1BB09116FC6FCD007A046D /* gw-monitor */ = {
 			isa = PBXGroup;
 			children = (
-				8C1BB0D516FC717E007A046D /* GWMonitorAppDelegate.h */,
-				8C1BB0D616FC717E007A046D /* GWMonitorAppDelegate.m */,
+				8C1BB0D516FC717E007A046D /* ApplicationDelegate.h */,
+				8C1BB0D616FC717E007A046D /* ApplicationDelegate.m */,
 				8C1BB09216FC6FCD007A046D /* main.m */,
+				8C1BB0D816FC7B5D007A046D /* prefix.pch */,
 			);
 			path = "gw-monitor";
 			sourceTree = "<group>";
@@ -140,25 +115,6 @@
 			path = vendor/Reachability;
 			sourceTree = "<group>";
 		};
-		8C1BB0DF16FCB24D007A046D /* dnsmasq-reloader */ = {
-			isa = PBXGroup;
-			children = (
-				8C1BB0ED16FCB827007A046D /* DRHelper.h */,
-				8C1BB0EA16FCB38A007A046D /* DRAppDelegate.h */,
-				8C1BB0EB16FCB38A007A046D /* DRAppDelegate.m */,
-				8C1BB0E016FCB24D007A046D /* main.m */,
-			);
-			path = "dnsmasq-reloader";
-			sourceTree = "<group>";
-		};
-		8C1BB0E816FCB285007A046D /* common */ = {
-			isa = PBXGroup;
-			children = (
-				8C1BB0E916FCB2A6007A046D /* prefix.pch */,
-			);
-			name = common;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,23 +133,6 @@
 			name = "gw-monitor";
 			productName = "gw-monitor";
 			productReference = 8C1BB08C16FC6FCD007A046D /* gw-monitor */;
-			productType = "com.apple.product-type.tool";
-		};
-		8C1BB0DC16FCB24D007A046D /* dnsmasq-reloader */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8C1BB0E616FCB24D007A046D /* Build configuration list for PBXNativeTarget "dnsmasq-reloader" */;
-			buildPhases = (
-				8C1BB0D916FCB24D007A046D /* Sources */,
-				8C1BB0DA16FCB24D007A046D /* Frameworks */,
-				8C1BB0DB16FCB24D007A046D /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "dnsmasq-reloader";
-			productName = "dnsmasq-reloader";
-			productReference = 8C1BB0DD16FCB24D007A046D /* dnsmasq-reloader */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +157,6 @@
 			projectRoot = "";
 			targets = (
 				8C1BB08B16FC6FCD007A046D /* gw-monitor */,
-				8C1BB0DC16FCB24D007A046D /* dnsmasq-reloader */,
 			);
 		};
 /* End PBXProject section */
@@ -230,16 +168,7 @@
 			files = (
 				8C1BB09316FC6FCD007A046D /* main.m in Sources */,
 				8C1BB0CA16FC7068007A046D /* Reachability.m in Sources */,
-				8C1BB0D716FC717E007A046D /* GWMonitorAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C1BB0D916FCB24D007A046D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C1BB0E116FCB24D007A046D /* main.m in Sources */,
-				8C1BB0EC16FCB38A007A046D /* DRAppDelegate.m in Sources */,
+				8C1BB0D716FC717E007A046D /* ApplicationDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +238,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = common/prefix.pch;
+				GCC_PREFIX_HEADER = "gw-monitor/prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -318,25 +247,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = common/prefix.pch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		8C1BB0E416FCB24D007A046D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = common/prefix.pch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		8C1BB0E516FCB24D007A046D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = common/prefix.pch;
+				GCC_PREFIX_HEADER = "gw-monitor/prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -358,15 +269,6 @@
 			buildConfigurations = (
 				8C1BB09916FC6FCD007A046D /* Debug */,
 				8C1BB09A16FC6FCD007A046D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8C1BB0E616FCB24D007A046D /* Build configuration list for PBXNativeTarget "dnsmasq-reloader" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8C1BB0E416FCB24D007A046D /* Debug */,
-				8C1BB0E516FCB24D007A046D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
