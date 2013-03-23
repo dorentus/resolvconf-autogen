@@ -1,6 +1,6 @@
 //
 //  prefix.pch
-//  common
+//  gw-monitor
 //
 //  Created by Zhang Yi on 13-3-22.
 //  Copyright (c) 2013年 Zhang Yi.
@@ -14,5 +14,3 @@
 #ifndef DEBUG
 #define NSLog(...)
 #endif
-
-#define GW_UPDATE_NOTIFICATION_NAME (@"GW_UPDATE")

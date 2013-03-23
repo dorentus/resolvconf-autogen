@@ -1,5 +1,5 @@
 //
-//  GWMonitorAppDelegate.h
+//  ApplicationDelegate.h
 //  gw-monitor
 //
 //  Created by Zhang Yi on 13-3-22.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GWMonitorAppDelegate : NSObject<NSApplicationDelegate>
+@interface ApplicationDelegate : NSObject<NSApplicationDelegate>
 
 - (id)initWithFileURL:(NSURL *)url;
 
