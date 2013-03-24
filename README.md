@@ -1,6 +1,9 @@
 正确<del>打开</del>使用方式
 ============
 
+方法一：
+-----
+
 1. 构建 `gw-monitor`，安装到 `/usr/local/bin/gw-monitor`
 2. 创建文件 `$HOME/Library/LaunchAgents/rox.dorentus.update_by_gw.plist`，内容如下：
 
@@ -18,14 +21,23 @@
         </array>
         <key>RunAtLoad</key>
         <true/>
+        <key>KeepAlive</key>
+        <dict>
+          <key>SuccessfulExit</key>
+          <false/>
+        </dict>
       </dict>
     </plist>
     ```
 
 3. 执行命令 `launchctl load $HOME/Library/LaunchAgents/rox.dorentus.update_by_gw.plist`，这样每次系统启动时都会运行 `/usr/local/bin/gw-monitor /usr/local/etc/resolv.conf`
-
 4. 安装 dnsmasq（推荐使用 [homebrew](http://mxcl.github.com/homebrew/) 安装），配置 `resolv-file=/usr/local/etc/resolv.conf`
-
    > 这里有个完整的配置文件包：https://dl.dropbox.com/u/7231772/conf-dnsmasq.tar.bz2
-
 5. 更改系统 DNS 为 `127.0.0.1`
+
+方法二（需要 homebrew）
+------
+1. `brew tap dorentus/tap`
+2. `brew install --HEAD dorentus/tap/gw-monitor`
+3. 按照 homebrew 输出的操作提示，将 plist 文件放到合适的位置，并使用 launchctl 加载它
+4. 执行方案一的第四和第五步
