@@ -1,6 +1,6 @@
 //
 //  ApplicationDelegate.h
-//  gw-monitor
+//  resolvconf-autogen
 //
 //  Created by Zhang Yi on 13-3-22.
 //  Copyright (c) 2013年 Zhang Yi.
