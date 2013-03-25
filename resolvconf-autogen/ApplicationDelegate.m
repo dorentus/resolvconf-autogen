@@ -1,6 +1,6 @@
 //
 //  ApplicationDelegate.m
-//  gw-monitor
+//  resolvconf-autogen
 //
 //  Created by Zhang Yi on 13-3-22.
 //  Copyright (c) 2013年 Zhang Yi.
@@ -32,7 +32,7 @@
         double delayInSeconds = 3.0;
         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
         dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-            SCDynamicStoreRef ds = SCDynamicStoreCreate(kCFAllocatorDefault, CFSTR("gw-monitor"), NULL, NULL);
+            SCDynamicStoreRef ds = SCDynamicStoreCreate(kCFAllocatorDefault, CFSTR("resolvconf-autogen"), NULL, NULL);
 
             // get PrimaryService for later use
             CFDictionaryRef dr = SCDynamicStoreCopyValue(ds, CFSTR("State:/Network/Global/IPv4"));

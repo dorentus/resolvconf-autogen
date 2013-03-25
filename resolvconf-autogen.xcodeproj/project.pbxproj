@@ -29,7 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8C1BB08C16FC6FCD007A046D /* gw-monitor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "gw-monitor"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C1BB08C16FC6FCD007A046D /* resolvconf-autogen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "resolvconf-autogen"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C1BB08F16FC6FCD007A046D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		8C1BB09216FC6FCD007A046D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8C1BB09B16FC7026007A046D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -61,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				8C1BB09D16FC705F007A046D /* vendor */,
-				8C1BB09116FC6FCD007A046D /* gw-monitor */,
+				8C1BB09116FC6FCD007A046D /* resolvconf-autogen */,
 				8C1BB08E16FC6FCD007A046D /* Frameworks */,
 				8C1BB08D16FC6FCD007A046D /* Products */,
 			);
@@ -70,7 +70,7 @@
 		8C1BB08D16FC6FCD007A046D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8C1BB08C16FC6FCD007A046D /* gw-monitor */,
+				8C1BB08C16FC6FCD007A046D /* resolvconf-autogen */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,7 +86,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8C1BB09116FC6FCD007A046D /* gw-monitor */ = {
+		8C1BB09116FC6FCD007A046D /* resolvconf-autogen */ = {
 			isa = PBXGroup;
 			children = (
 				8C1BB0D516FC717E007A046D /* ApplicationDelegate.h */,
@@ -94,7 +94,7 @@
 				8C1BB09216FC6FCD007A046D /* main.m */,
 				8C1BB0D816FC7B5D007A046D /* prefix.pch */,
 			);
-			path = "gw-monitor";
+			path = "resolvconf-autogen";
 			sourceTree = "<group>";
 		};
 		8C1BB09D16FC705F007A046D /* vendor */ = {
@@ -118,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8C1BB08B16FC6FCD007A046D /* gw-monitor */ = {
+		8C1BB08B16FC6FCD007A046D /* resolvconf-autogen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8C1BB09816FC6FCD007A046D /* Build configuration list for PBXNativeTarget "gw-monitor" */;
+			buildConfigurationList = 8C1BB09816FC6FCD007A046D /* Build configuration list for PBXNativeTarget "resolvconf-autogen" */;
 			buildPhases = (
 				8C1BB08816FC6FCD007A046D /* Sources */,
 				8C1BB08916FC6FCD007A046D /* Frameworks */,
@@ -130,9 +130,9 @@
 			);
 			dependencies = (
 			);
-			name = "gw-monitor";
-			productName = "gw-monitor";
-			productReference = 8C1BB08C16FC6FCD007A046D /* gw-monitor */;
+			name = "resolvconf-autogen";
+			productName = "resolvconf-autogen";
+			productReference = 8C1BB08C16FC6FCD007A046D /* resolvconf-autogen */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -144,7 +144,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Zhang Yi";
 			};
-			buildConfigurationList = 8C1BB08716FC6FCD007A046D /* Build configuration list for PBXProject "gw-monitor" */;
+			buildConfigurationList = 8C1BB08716FC6FCD007A046D /* Build configuration list for PBXProject "resolvconf-autogen" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -156,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8C1BB08B16FC6FCD007A046D /* gw-monitor */,
+				8C1BB08B16FC6FCD007A046D /* resolvconf-autogen */,
 			);
 		};
 /* End PBXProject section */
@@ -238,7 +238,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "gw-monitor/prefix.pch";
+				GCC_PREFIX_HEADER = "resolvconf-autogen/prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,7 +247,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "gw-monitor/prefix.pch";
+				GCC_PREFIX_HEADER = "resolvconf-autogen/prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -255,7 +255,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8C1BB08716FC6FCD007A046D /* Build configuration list for PBXProject "gw-monitor" */ = {
+		8C1BB08716FC6FCD007A046D /* Build configuration list for PBXProject "resolvconf-autogen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8C1BB09616FC6FCD007A046D /* Debug */,
@@ -264,7 +264,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C1BB09816FC6FCD007A046D /* Build configuration list for PBXNativeTarget "gw-monitor" */ = {
+		8C1BB09816FC6FCD007A046D /* Build configuration list for PBXNativeTarget "resolvconf-autogen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8C1BB09916FC6FCD007A046D /* Debug */,
