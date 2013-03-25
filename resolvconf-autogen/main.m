@@ -21,9 +21,7 @@ int main(int argc, const char * argv[])
         NSString *filepath = [NSString stringWithCString:argv[1] encoding:NSUTF8StringEncoding];
         NSURL *fileURL = [NSURL fileURLWithPath:filepath];
 
-        NSFileManager *fileManager = [NSFileManager defaultManager];
-        if (![fileManager isWritableFileAtPath:filepath]) {
-            printf("Cannot access file: 『%s』", [fileURL.absoluteString UTF8String]);
+        if (!EnsureFileExistsAtURL(fileURL)) {
             return -1;
         }
 
