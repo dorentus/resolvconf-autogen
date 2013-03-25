@@ -57,6 +57,10 @@
             NSLog(@"DNS: %@", dnsServerAddressList);
 
             if (dnsServerAddressList.count > 0) {
+                if (!EnsureFileExistsAtURL(_fileURL)) {
+                    return;
+                }
+
                 NSMutableString *output = [[NSMutableString alloc] init];
                 for (id addr in dnsServerAddressList) {
                     [output appendFormat:@"nameserver %@\n", addr];

@@ -9,6 +9,30 @@
 #ifdef __OBJC__
 #import <CoreFoundation/CoreFoundation.h>
 #import <AppKit/AppKit.h>
+static inline BOOL EnsureFileExistsAtURL(NSURL *url)
+{
+    NSString *filepath = [url path];
+
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL targetIsDirectory;
+    BOOL targetExists = [fileManager fileExistsAtPath:filepath isDirectory:&targetIsDirectory];
+    if (!targetExists) {
+        if (![fileManager createFileAtPath:filepath contents:nil attributes:nil]) {
+            printf("Target file “%s” not exists and cannot be created", [filepath UTF8String]);
+            return NO;
+        };
+    }
+    if (targetIsDirectory) {
+        printf("Target “%s” exists but is a directory", [filepath UTF8String]);
+        return NO;
+    }
+    if (![fileManager isWritableFileAtPath:filepath]) {
+        printf("Cannot access target file: “%s”", [filepath UTF8String]);
+        return NO;
+    }
+
+    return YES;
+}
 #endif
 
 #ifndef DEBUG
