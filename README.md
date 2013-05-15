@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dorentus/resolvconf-autogen.png?branch=master)](https://travis-ci.org/dorentus/resolvconf-autogen)
+
 正确<del>打开</del>使用方式
 ============
 
