@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/dorentus/resolvconf-autogen.png?branch=master)](https://travis-ci.org/dorentus/resolvconf-autogen)
 
-正确<del>打开</del>使用方式
+<ruby>使用<rt>正确打开</rt></ruby>方法
 ============
 
 方法一：
@@ -40,6 +40,6 @@
 方法二（需要 homebrew）
 ------
 1. `brew tap dorentus/tap`
-2. `brew install --HEAD dorentus/tap/resolvconf-autogen`
+2. `brew install dorentus/tap/resolvconf-autogen`
 3. 按照 homebrew 输出的操作提示，将 plist 文件放到合适的位置，并使用 launchctl 加载它
 4. 执行方案一的第四和第五步
