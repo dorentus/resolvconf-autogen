@@ -1,3 +1,5 @@
 language: objective-c
+xcode_project: resolvconf-autogen.xcodeproj
+xcode_scheme: resolvconf-autogen
 before_install:
   - git submodule update --init --recursive
