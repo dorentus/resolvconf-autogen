@@ -1,5 +1,5 @@
-Copyright 2013 Zhang Yi <zhangyi.cn@gmail.com>
-http://dorentus.github.com/
+Copyright 2014 Zhang Yi
+https://github.com/dorentus
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
