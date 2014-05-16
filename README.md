@@ -39,7 +39,7 @@
 
 方法二（需要 homebrew）
 ------
-1. `brew tap dorentus/tap`
-2. `brew install dorentus/tap/resolvconf-autogen`
+1. `brew tap dorentus/recipes`
+2. `brew install dorentus/recipes/resolvconf-autogen`
 3. 按照 homebrew 输出的操作提示，将 plist 文件放到合适的位置，并使用 launchctl 加载它
 4. 执行方案一的第四和第五步
